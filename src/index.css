@@ -1,13 +1,207 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans");
+
+* {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: ivory;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+}
+
+.drawerlist {
+  color: whitesmoke;
+}
+
+.main {
+  width: 100%;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.stat {
+  background-color: rgb(240, 238, 238);
+  padding: 0 25px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px 1px whitesmoke;
+  text-align: center;
+  margin: 10px 5px;
+}
+
+.stats-heading {
+  text-indent: 20px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.news-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.name-symbol {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 5px;
+}
+
+.cryptocurrency-heading {
+  text-indent: 20px;
+}
+
+.block-btn {
+  display: none;
+}
+
+.heading-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading-button .flex-btn {
+  margin-inline: 10px;
+}
+
+.all-currencies,
+.all-news {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.currency-card,
+.news-card {
+  transition: all 1.5s;
+}
+
+.currency-card:hover,
+.news-card:hover {
+  transition: all 1.5s;
+  transform: translateY(-7px);
+}
+
+/* Single Currency */
+
+.single-coin {
+  width: 100%;
+}
+
+.single-coin-heading {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.single-coin-heading img {
+  width: 50px;
+  margin: 20px;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.stats-row .single-stat {
+  margin: 10px;
+  background-color: rgb(240, 238, 238);
+  padding: 0 30px;
+  border-radius: 7px;
+  min-width: 20%;
+}
+
+.stat-desc {
+  text-indent: 15px;
+  width: 95%;
+}
+
+.stat-desc div {
+  margin-inline: 15px;
+}
+
+.desc {
+  line-height: 1.6rem;
+  font-size: large;
+}
+
+.links {
+  text-indent: 15px;
+}
+
+.links li {
+  line-height: 2rem;
+}
+
+.loader {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Exchanges */
+
+.exchanges {
+  width: 70%;
+  margin: auto;
+}
+
+.exchanges h1 {
+  text-align: center;
+}
+
+table {
+  margin: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 899px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stats-heading {
+    text-align: center;
+  }
+
+  .heading-button {
+    display: block;
+    text-align: center;
+  }
+  .heading-button .flex-btn {
+    display: none;
+  }
+  .block-btn {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cryptocurrency-heading {
+    text-indent: 10px;
+  }
 }
