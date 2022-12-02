@@ -8,6 +8,7 @@ import TableRow from '@mui/material/TableRow';
 import Avatar from '@mui/material/Avatar';
 import millify from "millify";
 import { ThreeDots } from 'react-loader-spinner';
+import EastRoundedIcon from '@mui/icons-material/EastRounded';
 
 
 const Exchanges = () => {
@@ -56,7 +57,7 @@ const Exchanges = () => {
             {exchanges ?
             <>
             <h1>Exchanges</h1>
-            
+                <div className="swipe-right">Swipe to view info &nbsp;<EastRoundedIcon/></div>
                 <TableContainer>
                     <Table stickyHeader aria-label="sticky table">
                     <TableHead>
