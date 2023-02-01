@@ -8,17 +8,6 @@ import Avatar from '@mui/material/Avatar';
 import millify from "millify";
 import { Link } from 'react-router-dom';
 
-const bull = (
-  <Box
-    component="span"
-    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-  >
-    •
-  </Box>
-);
-
-
-
 const Currency = (props) => {
     return ( 
         <div className="currency-card">
